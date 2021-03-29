@@ -1,0 +1,63 @@
+.ImageSection {
+    display: flex;
+    margin: 4rem 0;
+
+    .img {
+        width: 500px;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-info {
+        margin-left: 2rem;
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.about-details {
+    display: flex;
+
+    p {
+        padding: 0.3rem 0
+    }
+
+    .right-section {
+        margin-left: 2.3rem;
+    }
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: #037FFF;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: inherit;
+    font-family: inherit;
+    position: relative;
+    cursor: pointer;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0.3rem;
+        background-color: #a4acc4;
+        bottom: 0;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}

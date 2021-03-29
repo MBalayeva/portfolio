@@ -1,0 +1,43 @@
+.ServicesSection {
+    .service {
+        width: 95%;
+        background-color: #191d2b;
+        border-left: 1px solid #2e344e;
+        border-right: 1px solid #2e344e;
+        border-bottom: 1px solid #2e344e;
+        border-top: 8px solid #2e344e;
+        transition: 0.4s ease-in-out;
+        text-align: center;
+        &:hover{
+            border-top: 8px solid #037FFF;
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        padding: 3rem;
+        .s-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 7px;
+            margin: 1rem 0;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+                width: 30%;
+                height: 1px;
+                background-color: #2e344e;
+            }
+        }
+    }
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
