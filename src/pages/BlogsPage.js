@@ -1,5 +1,5 @@
 import React from 'react';
-import AllBlogs from './../components/allBlogs';
+import AllBlogs from './../components/AllBlogs';
 import Title from '../components/Title'
 
 function BlogsPage() {
