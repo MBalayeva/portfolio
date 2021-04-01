@@ -1,0 +1,59 @@
+.title {
+    margin-bottom: 4rem;
+}
+
+.portfolios {
+    .portfolio {
+        .image-data {
+            position: relative;
+            img {
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 13px;
+                left: 15px;
+                height: calc(100% - 30px);
+                width: calc(100% - 30px);
+                background-color: red;
+                opacity: 0.9;
+                transform-origin: center;
+                transform: scale(0);
+                transition: all .3s ease-in-out;
+            }
+            &:hover::before {
+                    transform: scale(1);
+            }
+        }
+        .hover-items {
+            list-style: none;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: slateblue;
+            visibility: hidden;
+            padding: 1rem 2rem;
+        }
+        &:hover {
+            .hover-items {
+                visibility: visible;
+                transition: all .5s ease-in-out .3s;
+                top: 50%;
+            }
+        }
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                color: #037fff;
+            }
+        }
+    }
+}

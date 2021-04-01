@@ -16,17 +16,25 @@ function PortfoliosPage() {
         <div className="portfolios-data">
           <Categories />
           <div className="portfolios">
-            {menuItems.map((item) => {
-              return (
-                <MenuItems
-                  title={item.title}
-                  image={item.image}
-                  link1={item.link1}
-                  link2={item.link2}
-                  key={item.id}
-                />
-              );
-            })}
+            <div className="container">
+              <div className="row">
+                {menuItems.map((item) => {
+                  return (
+                    <div className="col-md-5" key={item.id}>
+                      <MenuItems
+                        title={item.title}
+                        image={item.image}
+                        link1={item.link1}
+                        link2={item.link2}
+                        icon1={item.icon1}
+                        icon2={item.icon2}
+                        key={item.id}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
