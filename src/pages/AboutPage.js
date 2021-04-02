@@ -14,44 +14,50 @@ function AboutPage() {
         <ImageSection />
         <Title span="skills" title="skills" />
 
-        <div className="container">
           <div className="row">
-            <div className="col-md-5">
-              <SkillsSection skill="java script" progress="50%" />
+            <div className="col-sm-6">
+              <SkillsSection skill="java script" progress="60%" />
             </div>
-            <div className="col-md-5">
-              <SkillsSection skill="java script" progress="50%" />
+            <div className="col-sm-6">
+              <SkillsSection skill="java" progress="50%" />
             </div>
-            <div className="col-md-5">
-              <SkillsSection skill="java script" progress="50%" />
+            <div className="col-sm-6">
+              <SkillsSection skill="python" progress="40%" />
             </div>
-            <div className="col-md-5">
-              <SkillsSection skill="java script" progress="50%" />
+            <div className="col-sm-6">
+              <SkillsSection skill="java script" progress="80%" />
             </div>
-          </div>
-          <Title span="services" title="services"/>
+          <Title span="services" title="services" />
           <div className="service-container">
-            <ServicesSection
-              image={design}
-              title={"Web design"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea aliquet lacinia venenatis. Sed nec risus ex."
-              }
-            />
-            <ServicesSection
-              image={intelligence}
-              title={"Artificial Intelligence"}
-              text={
-                "Cras pharetra eros tristique viverra posuere. Sed vitae libero nec lacus iaculismollis."
-              }
-            />
-            <ServicesSection
-              image={gamedev}
-              title={"Game development"}
-              text={
-                "Vivamus ut urna eu enim vehicula scelerisque ut non ex. Maecenas dictum efficitur sapien non bibendum."
-              }
-            />
+            <div className="row">
+              <div className="col-xl-4 col-md-6">
+                <ServicesSection
+                  image={design}
+                  title={"Web design"}
+                  text={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea aliquet lacinia venenatis. Sed nec risus ex."
+                  }
+                />
+              </div>
+              <div className="col-xl-4 col-md-6">
+                <ServicesSection
+                  image={intelligence}
+                  title={"Artificial Intelligence"}
+                  text={
+                    "Cras pharetra eros tristique viverra posuere. Sed vitae libero nec lacus iaculismollis."
+                  }
+                />
+              </div>
+              <div className="col-xl-4 col-md-6">
+                <ServicesSection
+                  image={gamedev}
+                  title={"Game development"}
+                  text={
+                    "Vivamus ut urna eu enim vehicula scelerisque ut non ex. Maecenas dictum efficitur sapien non bibendum."
+                  }
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

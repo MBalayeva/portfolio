@@ -1,6 +1,7 @@
 .ServicesSection {
     .service {
         width: 95%;
+        min-height: 500px;
         background-color: #191d2b;
         border-left: 1px solid #2e344e;
         border-right: 1px solid #2e344e;
@@ -40,4 +41,17 @@
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
+}
+
+@media screen and (max-width:1140px) {
+    .ServicesSection {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .ServicesSection .service {
+        margin: 0 auto;
+        min-height: auto;
+    }
 }

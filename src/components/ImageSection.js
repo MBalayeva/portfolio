@@ -17,7 +17,7 @@ function ImageSection() {
             tristique viverra posuere.
           </p>
           <div className="about-details">
-            <div className="left-section">
+            {/* <div className="left-section">
               <p>Full Name</p>
               <p>Age</p>
               <p>Nationality</p>
@@ -32,9 +32,29 @@ function ImageSection() {
               <p>: French, Spanish, English</p>
               <p>: 2 Beightbridge, BN7 GB9, United kingdom</p>
               <p>: France, Spain, Germany</p>
+            </div> */}
+            <div className="about-details-item">
+              <p>Full Name: </p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="about-details-item">
+              <p>Age: </p>
+              <p>50</p>
+            </div>
+            <div className="about-details-item">
+              <p>Languages: </p>
+              <p> French, Spanish, English</p>
+            </div>
+            <div className="about-details-item">
+              <p>Address: </p>
+              <p> 2 Beightbridge, BN7 GB9, United kingdom</p>
+            </div>
+            <div className="about-details-item">
+              <p>Countries:</p>
+              <p>France, Spain, Germany</p>
             </div>
           </div>
-          <button className='btn'>download cv</button>
+          <button className="btn">download cv</button>
         </div>
       </div>
     );

@@ -1,5 +1,6 @@
 import './App.scss';
-import React, { Switch, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
@@ -8,10 +9,20 @@ import BlogsPage from './pages/BlogsPage'
 import ContactsPage from './pages/ContactsPage'
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+  const showNav = () => {
+    setNavToggle(!navToggle);
+  }
+
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${navToggle ? 'show-nav' : ''}`}>
         <Navbar />
+      </div>
+      <div className='nav-btn' onClick={showNav}>
+        <div className='line'></div>
+        <div className='line'></div>
+        <div className='line'></div>
       </div>
       <div className="main-content">
         <div className="content">

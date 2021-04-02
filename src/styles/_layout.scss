@@ -4,8 +4,9 @@
         height: 100vh;
         position: fixed;
         background-color: #191d2b;
+        z-index: 10;
     }
-    
+
     .main-content {
         width: 84%;
         margin-left: 16%;
@@ -14,8 +15,71 @@
         background-image: url('../img/dots.svg');
         display: grid;
         position: relative;
-        .content{
+
+        .content {
             margin: 5rem 7rem;
+        }
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 7%;
+        right: 7%;
+        width: 4rem;
+        height: 2.5rem;
+        display: none;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .line {
+            width: 100%;
+            height: 0.4rem;
+            background-color: #3858cc;
+            border-radius: 8px;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .App {
+        .sidebar {
+            transform: translateX(-100%);
+            width: 30%;
+            transition: all .4s ease-in-out;
+            transform-origin: left;
+        }
+
+        .main-content {
+            margin-left: 0;
+            width: 100%;
+
+            .content {
+                margin-left: 4rem;
+            }
+        }
+
+        .nav-btn {
+            display: flex;
+
+            .line {
+                display: block;
+            }
+        }
+
+        .show-nav {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .App {
+        .sidebar {
+            width: 50%;
         }
     }
 }
