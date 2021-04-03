@@ -29,7 +29,6 @@ function PortfoliosPage() {
       <div className="portfolios-data">
         <Categories filter={filter} categories={categories }/>
         <div className="portfolios">
-          <div className="container">
             <div className="row">
               {menuItems.map((item) => {
                 return (
@@ -47,7 +46,6 @@ function PortfoliosPage() {
                 );
               })}
             </div>
-          </div>
         </div>
       </div>
     </div>
