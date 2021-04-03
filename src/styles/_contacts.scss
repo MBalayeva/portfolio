@@ -36,3 +36,18 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .ContactsPage {
+        flex-direction: column;
+        .map-sect {
+            iframe {
+                height: 50vh;
+                width: 100%;
+            }
+        }
+        .contacts-sect {
+            margin-left: 0;
+        }
+    }
+}

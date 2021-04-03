@@ -9,8 +9,7 @@
             position: relative;
             img {
                 width: 100%;
-                height: 40vh;
-                object-fit: cover;
+                height: 35vh;
             }
             &:before {
                 content: '';
@@ -73,10 +72,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-    justify-content: space-between;
     .portfolio-btn {
         outline: none;
         border: none;
+        margin: 8px;
         border-radius: 8px;
         font-family: inherit;
         font-size: inherit;

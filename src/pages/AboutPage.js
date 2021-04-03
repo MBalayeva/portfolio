@@ -14,7 +14,7 @@ function AboutPage() {
         <ImageSection />
         <Title span="skills" title="skills" />
 
-          <div className="row">
+          <div className="row mt-5 mt-sm-0">
             <div className="col-sm-6">
               <SkillsSection skill="java script" progress="60%" />
             </div>

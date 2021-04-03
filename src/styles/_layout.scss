@@ -23,8 +23,8 @@
 
     .nav-btn {
         position: absolute;
-        top: 7%;
-        right: 7%;
+        top: 3%;
+        right: 3%;
         width: 4rem;
         height: 2.5rem;
         display: none;
@@ -76,10 +76,15 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .App {
         .sidebar {
             width: 50%;
+        }
+        .main-content {
+            .content {
+                margin-left: 2rem;
+            }
         }
     }
 }

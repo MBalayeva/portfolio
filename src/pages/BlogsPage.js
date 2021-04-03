@@ -10,7 +10,7 @@ function BlogsPage() {
           <div className="row">
             {AllBlogs.map((blog) => {
               return (
-                <div className="col-md-5">
+                <div className="col-md-5" key={blog.id}>
                   <div className="blog" key={blog.id}>
                     <a href={blog.link}>
                       <img src={blog.image} alt="" />
