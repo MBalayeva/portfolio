@@ -40,6 +40,7 @@
             background-color: #3858cc;
             border-radius: 8px;
             display: none;
+            transition: all .3s ease-in-out;
         }
     }
 }
@@ -72,6 +73,19 @@
 
         .show-nav {
             transform: translateX(0);
+        }
+
+        .nav-close-btn {
+            .line:nth-child(1) {
+                transform: translateY(2rem) rotate(45deg);
+            }
+            .line:nth-child(2) {
+                transform: translateY(12px);
+                visibility: hidden;
+            }
+            .line:nth-child(3) {
+                transform: rotate(-45deg);
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ function PortfoliosPage() {
   const allCategories = ['All', ...new Set(portfolios.map((item) => item.category))];
 
   const [menuItems, setMenuItems] = useState(portfolios);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filter = (category) => {
     if(category === 'All') {

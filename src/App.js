@@ -10,16 +10,18 @@ import ContactsPage from './pages/ContactsPage'
 
 function App() {
   const [navToggle, setNavToggle] = useState(false);
+  const [navBtn, setNavBtn] = useState(false);
   const showNav = () => {
     setNavToggle(!navToggle);
+    setNavBtn(!navBtn);
   }
 
   return (
     <div className="App">
       <div className={`sidebar ${navToggle ? 'show-nav' : ''}`}>
-        <Navbar />
+        <Navbar showNav={showNav} />
       </div>
-      <div className='nav-btn' onClick={showNav}>
+      <div className={`nav-btn ${navBtn ? 'nav-close-btn' : ''}`} onClick={showNav}>
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
